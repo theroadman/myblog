@@ -1,0 +1,318 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, section, nav {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* My stylesheet */ 
+
+
+
+/*
+  Name: David Blog
+  Date: July 2018
+  Version: 1.0
+  Author: Deividas
+  description: >-
+  Sample layout for HTML5 and CSS3 goodness.
+*/
+
+/***** Global *****/
+/* Body */
+  body {
+    background: #F0F0F0 url('../images/bg.png');
+    color: #5D6268;
+    font-size: 87.5%; /* Base font size: 14px */
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-family: 'Open Sans', verdana; 
+  }
+
+/* Headings */
+h2 {font-size: 1.571em} /* 22px */
+h3 {font-size: 1.429em} /* 20px */
+h4 {font-size: 1.286em} /* 18px */
+h5 {font-size: 1.143em} /* 16px */
+h6 {font-size: 1em} /* 14px */
+
+h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: .8em;
+  font-family: 'Roboto', verdana; 
+}
+
+/* Anchors */
+a {outline: 0;}
+a img {border: 0px; text-decoration: none;}
+a:link, a:visited {
+  color: #f76c6c;
+  padding: 0 1px;
+  text-decoration: underline;
+}
+a:hover, a:active {
+  background-color: #f76c6c;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px #333;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1.143em;
+  font-size: 1.286em
+}
+* p:last-child {margin-bottom: 0;}
+
+strong, b {font-weight: bold;}
+em, i {font-style: italic;}
+
+::-moz-selection {background: #F6CF74; color: #fff;}
+::selection {background: #F6CF74; color: #fff;}
+
+/* Lists */
+ul {
+  list-style: outside disc;
+  margin: 1em 0 1.5em 1.5em;
+}
+
+ol {
+  list-style: outside decimal;
+  margin: 0em 0 1.5em 1.5em;
+}
+
+dl {margin: 0 0 1.5em 0;}
+dt {font-weight: bold;}
+dd {margin-left: 1.5em;}
+
+/* Quotes */
+blockquote {font-style: italic;}
+cite {}
+
+q {}
+
+/* Tables */
+table {margin: .5em auto 1.5em auto; width: 98%;}
+
+  /* Thead */
+  thead th {padding: .5em .4em; text-align: left;}
+  thead td {}
+
+  /* Tbody */
+  tbody td {padding: .5em .4em;}
+  tbody th {}
+
+  tbody .alt td {}
+  tbody .alt th {}
+
+  /* Tfoot */
+  tfoot th {}
+  tfoot td {}
+
+/***** Layout *****/
+.body {clear: both; margin: 0 auto; width: 800px;}
+
+
+/*
+  Header
+*****************/
+#banner {
+  margin: 0 auto;
+  padding: 2.5em 0 0 0;
+}
+
+ /* Banner */
+  #banner h1 {font-size: 3.571em; line-height: .6;}
+  #banner h1 a:link, #banner h1 a:visited {
+    color: #24305e;
+    display: block;
+    font-weight: bold;
+    margin: 0 0 .6em .2em;
+    text-decoration: none;
+    width: 427px;
+  }
+  #banner h1 a:hover, #banner h1 a:active {
+    background: none;
+    color: #f76c6c;
+    text-shadow: none;
+  }
+
+  #banner h1 strong {font-size: 0.36em; font-weight: normal;}
+
+
+  /* Main Nav */
+  #banner nav {
+    background: #24305e;
+    font-size: 1.243em;
+    height: 40px;
+    line-height: 30px;
+    margin: 0 auto 2em auto;
+    padding: 0;
+    text-align: center;
+    width: 800px;
+	/*shadow*/
+	box-shadow: 0 2.5px 5px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);box-shadow: 0 5px 10px 
+  rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+  }
+#banner nav ul {list-style: none; margin: 0 auto; width: 800px;}
+  #banner nav li {float: left; display: inline; margin: 0;}
+
+  #banner nav a:link, #banner nav a:visited {
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    padding: 5px 1.5em;
+    text-decoration: none;
+  }
+  #banner nav a:hover, #banner nav a:active,
+  #banner nav .active a:link, #banner nav .active a:visited {
+    background: #f76c6c;
+    color: #24305e;
+    text-shadow: none;
+  }
+
+  #banner nav li:first-child a {
+    border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+
+    border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+  }
+
+
+/*
+  Featured
+*****************/
+#featured {
+  background: #fff;
+  margin-bottom: 2em;
+  overflow: hidden;
+  padding: 20px;
+  width: 760px;
+	/*shadow*/
+	box-shadow: 0 2.5px 5px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+#featured h2 {color: #f76c6c; font-size: 1.714em; margin-bottom: 0.333em;}
+#featured h3 {font-size: 1.429em; margin-bottom: .5em;}
+
+#featured h3 a:link, #featured h3 a:visited {color: #000305; text-decoration: none;}
+#featured h3 a:hover, #featured h3 a:active {color: #fff;}
+
+/*
+  Body
+*****************/
+#content {
+  background: #fff;
+  margin-bottom: 2em;
+  overflow: hidden;
+  padding: 20px 20px;
+  width: 760px;
+
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+/*shadow*/
+box-shadow: 0 2.5px 5px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+/*
+  Footer
+*****************/
+#contentinfo {padding-bottom: 2em; text-align: right;}
+
+/* Blog */
+.hentry {
+  border-bottom: 1px solid #eee;
+  padding: 1.5em 0;
+}
+
+li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
+#content > .hentry {padding: 1em 0;}
+
+.entry-title {font-size: 1.429em; margin-bottom: 0;}
+.entry-title a:link, .entry-title a:visited {text-decoration: none;}
+
+.hentry .post-info * {font-style: normal;}
+
+ /* Blog Index */
+  #posts-list {list-style: none; margin: 0;}
+  #posts-list .hentry {padding-left: 10px; position: relative;}
+
+#posts-list .hentry:hover {
+  background: #f76c6c;
+  color: #fff;
+}
+#posts-list .hentry:hover a:link, #posts-list .hentry:hover a:visited {
+  color: #F8E9A1;
+  text-shadow: 1px 1px 1px #333;
+}
+
+.about {
+  width: 100%;
+  background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
